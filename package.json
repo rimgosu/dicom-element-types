@@ -1,6 +1,6 @@
 {
     "name": "dicom-element-types",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "TypeScript type definitions for DICOM elements",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -25,6 +25,6 @@
     },
     "repository": {
       "type": "git",
-      "url": "https://github.com/yourusername/dicom-element-types.git"
+      "url": "https://github.com/rimgosu/dicom-element-types.git"
     }
   }
