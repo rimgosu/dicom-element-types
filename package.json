@@ -1,0 +1,30 @@
+{
+    "name": "dicom-element-types",
+    "version": "1.0.0",
+    "description": "TypeScript type definitions for DICOM elements",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+      "dist"
+    ],
+    "scripts": {
+      "build": "tsc",
+      "prepublishOnly": "npm run build"
+    },
+    "keywords": [
+      "dicom",
+      "medical",
+      "imaging",
+      "typescript",
+      "types"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
+    "devDependencies": {
+      "typescript": "^5.0.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/yourusername/dicom-element-types.git"
+    }
+  }
