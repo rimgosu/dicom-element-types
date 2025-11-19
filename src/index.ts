@@ -1,1 +1,2 @@
-export type { DICOMElementMap } from "./dict";
+export type { DICOMElementMap } from "./types";
+export { DicomTags } from "./constants";

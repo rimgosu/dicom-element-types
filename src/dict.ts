@@ -1,6 +1,6 @@
-type TDICOMDictionary = Record<string, Record<string, [string, string]>>;
+export type TDICOMDictionary = Record<string, Record<string, [string, string]>>;
 
-const dict = {
+export const dict = {
   "0002": {
     "0001": ["OB", "FileMetaInformationVersion"],
     "0002": ["UI", "MediaStoredSOPClassUID"],
@@ -3609,22 +3609,3 @@ const dict = {
     "106C": ["OB", "DetectorCalibrationData"],
   },
 } as const satisfies TDICOMDictionary;
-
-type ExtractNames<T> = {
-  [OuterK in keyof T]: {
-    [InnerK in keyof T[OuterK]]: T[OuterK][InnerK] extends readonly [
-      string,
-      infer Name
-    ]
-      ? Name
-      : never;
-  }[keyof T[OuterK]];
-}[keyof T];
-
-type AllElementNames = ExtractNames<typeof dict>;
-
-type DICOMElementMap = {
-  [K in AllElementNames]?: any;
-};
-
-export type { DICOMElementMap };
